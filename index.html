@@ -166,7 +166,7 @@
                     <a href="images/osama ayaz.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form name="submit-to-google-sheet" autocomplete="off">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -226,7 +226,7 @@
                     msg.innerHTML = "Response submitted successfully!"
                     setTimeout(function(){
                         msg.innerHTML = ""
-                    }, 2000)
+                    }, 900)
                     form.reset()
                     })
                     .catch(error => console.error('Error!', error.message))
