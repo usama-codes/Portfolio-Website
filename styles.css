@@ -109,6 +109,11 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-col-1 img:hover{
+    transform: scale(1.1);
 }
 
 .about-col-2{
@@ -192,12 +197,17 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-radius: 15px;
-    transition: background 0.6s, transform 0.6s;
+    transition: transform 0.5s ease;
 }
 
 .services-list div i{
     font-size: 40px;
     margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.services-list div:hover i{
+    transform: rotate(15deg);
 }
 
 .services-list div h2{
@@ -355,6 +365,11 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
+.btn.btn2:active{
+    transform: translateY(1px);
+}
+
+
 .contact-right form{
     width: 100%;
 }
@@ -378,6 +393,11 @@ form .btn2{
     font-size: 18px;
 }
 
+form .btn2:active {
+    transform: translateY(1px); 
+    background-color: #cc0037; 
+}
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -391,6 +411,18 @@ form .btn2{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+.fa-linkedin:hover{
+    color: #0077b5;
+}
+
+.fa-github:hover{
+    color: #333;
+}
+
+.fa-x-twitter:hover{
+    color: #1da1f2;
 }
 
 /* Responsive Design */

@@ -9,8 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4ae64b6cf0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
+    <!-- Header Section -->
     <div id="header">
         <div class="container">
             <nav>
@@ -27,7 +32,7 @@
             </nav>
             <div class="header-text">
                 <p>Software Engineering Student</p>
-                <h1>Hi, I'm <span>Usama</span> Ayaz.</h1>
+                <h1>Hi, I'm <span id="my-name"></span>.</h1>
             </div>
         </div>
         
@@ -37,10 +42,10 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1" data-aos="fade-right" data-aos-duration="900" data-aos-delay="200">
                     <img src="images/osama.jpg" alt="user image">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                     <h1 class="subtitle">About Me</h1>
                     <p>Hey, I’m someone who loves exploring the tech world, whether it’s AI, automation, or anything exciting that catches my attention. Recently, I started my journey into web development, and this is my first product. Outside of coding, I enjoy taking on challenges, learning on the go, and building cool stuff that makes life easier.</p>
 
@@ -146,7 +151,6 @@
     </div>
 
     <!-- Contact Section -->
-
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -154,7 +158,7 @@
                     <h1 class="subtitle">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>usamaayaz475@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>(+92) 335 3505169</p>
-                    <div class="social-icons">
+                    <div class="social-icons">  
                         <a href="https://x.com/iosamaayaz" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="https://github.com/usama-codes" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="https://linkedin.com/in/osama-ayaz-2005abc" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -178,6 +182,7 @@
     </div>
 
 <!-- Javascript -->
+    <!-- Experience, Skills And Education Tabs Animation -->
     <script>
         var tabLinks = document.querySelectorAll('.tab-links');
         var tabContents = document.querySelectorAll('.tab-contents');
@@ -193,6 +198,7 @@
         }
     </script>
 
+    <!-- Side menu Managenement For Mobile Phones -->
     <script>
 
         var sideMenu = document.getElementById("sidemenu");
@@ -207,6 +213,7 @@
 
     </script>
 
+    <!-- Recieving User Responses -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw7QjGqATJLa9XQCKF50RepSABYW6dBTkQtdQ8LA_o7ELSJa3wrLXjLXqClPh8L0gHZpA/exec'
         const form = document.forms['submit-to-google-sheet']
@@ -226,5 +233,24 @@
             })
     </script>
 
+    <!-- Typing Animation -->
+    <script>
+        var typed = new Typed('#my-name', {
+            strings: ["Usama Ayaz"], 
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true 
+        });
+    </script>
+
+    <!-- AOS JS and Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            offset: 120,
+            once: false,
+        });
+    </script>
 </body>
 </html>
