@@ -33,6 +33,7 @@ body{
     color: #ff004f;
     display: inline-block;
     vertical-align: text-bottom; 
+    line-height: 1.05;
 }
 
 .container{
@@ -467,5 +468,9 @@ nav .fas{
 
     .copyright{
         font-size: 14px;
+    }
+
+    .logo{
+        font-size: 44px;
     }
 }
