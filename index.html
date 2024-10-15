@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ae64b6cf0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span id="colored-letter">U</span>sama.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineering Student</p>
+                <h1>Hi, I'm <span>Usama</span> Ayaz.</h1>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/osama.jpg" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hey, I’m someone who loves exploring the tech world, whether it’s AI, automation, or anything exciting that catches my attention. Recently, I started my journey into web development, and this is my first product. Outside of coding, I enjoy taking on challenges, learning on the go, and building cool stuff that makes life easier.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Data-driven insights and predictions.</li>
+                            <li><span>Android Development</span><br>Building apps for Android devices.</li>
+                            <li><span>Web Development</span><br>Creating interactive and responsive websites.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jun 2024 - Sep 2024</span><br>ML/DL Intern at Murabbi</li>
+                            <li><span>Sep 2024 - Current</span><br>Executive Tech & IT at NEC</li>
+                            <li><span>Sep 2024 - Current</span><br>Executive Admin Coord at NArC</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Current</span><br>BESE from NUST</li>
+                            <li><span>2021 - 2023</span><br>Aziz Bhatti Shaheed Army College Mardan</li>
+                            <li><span>2020 - 2021</span><br>NESSAC, Nowshera<li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I’ve recently embarked on my web development journey, starting with the basics of HTML, CSS, and JavaScript. This
+                    website marks my first step into bringing everything I’ve learned so far to life.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>With a solid foundation in Java, I’ve been developing apps for a while now. This journey has allowed me to build
+                    functional and practical apps, constantly improving my skills along the way.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Deep Learning</h2>
+                    <p>I’ve gained expertise in machine learning and deep learning, diving into concepts like regression, classification, and neural networks. This journey has equipped me to tackle complex problems and apply advanced techniques in real-world projects.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prtfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/festiva.jpg" alt="thumbnail of a campus management app">
+                    <div class="layer">
+                        <h3>Campus Management App</h3>
+                        <p>This is an Android app focused on streamlining extra-currucular activities for university students through one platform.</p>
+                        <a href="https://www.linkedin.com/posts/osama-ayaz-2005abc_java-androiddevelopment-firebase-activity-7212507517795332096-ANXH?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/cancerdetection.jpeg" alt="robot in clinic">
+                    <div class="layer">
+                        <h3>Cancer Detection Model</h3>
+                        <p>I trained a Deep Learning model to detect skin cancer tumors using lesion images with high accuracy.</p>
+                        <a href="https://www.linkedin.com/posts/osama-ayaz-2005abc_alhamdulillah-my-machine-learning-deep-activity-7248685319758241792-YO2p?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/ironman.jpeg" alt="iron man">
+                    <div class="layer">
+                        <h3>Jarvis</h3>
+                        <p>Introducing my upcoming project, designed to streamline every task on your PC—turning you into your very own Iron Man!</p>
+                        <a href="https://github.com/usama-codes/Jarvis" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>usamaayaz475@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+92) 335 3505169</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/iosamaayaz" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/usama-codes" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/osama-ayaz-2005abc" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/osama ayaz.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> Copyright  |  usama-codes</p>
+        </div>
+    </div>
+
+<!-- Javascript -->
+    <script>
+        var tabLinks = document.querySelectorAll('.tab-links');
+        var tabContents = document.querySelectorAll('.tab-contents');
+
+        function opentab(tabName) {
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove('active-link');
+                tabContents[i].classList.remove('active-tab');
+            }
+
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+
+        var sideMenu = document.getElementById("sidemenu");
+
+            function closemenu() {
+                sideMenu.style.right = "-200px";
+            }
+
+            function openmenu() {
+                sideMenu.style.right = "0";
+            }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw7QjGqATJLa9XQCKF50RepSABYW6dBTkQtdQ8LA_o7ELSJa3wrLXjLXqClPh8L0gHZpA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Response submitted successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 2000)
+                    form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+    </script>
+
+</body>
+</html>
