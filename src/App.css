@@ -1,0 +1,55 @@
+.app {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main-content {
+  padding-top: 100px; /* offset for fixed navbar */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+section {
+  padding: 6rem 0;
+  border-bottom: 2px solid var(--border-color);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+#about {
+  padding-bottom: 2rem;
+}
+
+#projects {
+  padding-top: 3rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.section-line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: var(--border-color);
+}
+
+.section-icon {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
