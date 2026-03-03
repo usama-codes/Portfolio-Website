@@ -1,0 +1,64 @@
+/* Hide default cursor globally */
+*, *::before, *::after {
+  cursor: none !important;
+}
+
+/* ── Main arrow pointer ── */
+.cursor-arrow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+  will-change: transform;
+  transition: opacity 0.2s ease;
+  filter: drop-shadow(0 0 4px var(--accent-color));
+}
+
+.cursor-arrow svg {
+  display: block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover: slight scale up */
+.cursor-arrow.hovering svg {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px var(--accent-color));
+}
+
+/* Click: quick scale down */
+.cursor-arrow.clicking svg {
+  transform: scale(0.85);
+}
+
+/* ── Ghost trail ── */
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99998;
+  will-change: transform;
+  transition: opacity 0.2s ease;
+}
+
+.cursor-trail svg {
+  display: block;
+}
+
+/* Hover: trail spreads slightly */
+.cursor-trail.hovering svg {
+  opacity: 0.35;
+}
+
+/* ── Hide custom cursor on touch devices ── */
+@media (pointer: coarse), (hover: none) {
+  .cursor-arrow,
+  .cursor-trail {
+    display: none !important;
+  }
+
+  *, *::before, *::after {
+    cursor: auto !important;
+  }
+}

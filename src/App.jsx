@@ -5,6 +5,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import CustomCursor from './components/CustomCursor';
 import './App.css';
 
 
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="app">
+      <CustomCursor />
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main className="main-content">
         <Hero />
