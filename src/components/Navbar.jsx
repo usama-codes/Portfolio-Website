@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import './Navbar.css';
-import resumeFile from './images/osama ayaz.pdf';
+import resumeFile from './assets/osamaayaz.pdf';
 
 const Navbar = ({ theme, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false);
