@@ -1,5 +1,5 @@
 /* Hide default cursor globally */
-*, *::before, *::after {
+* {
   cursor: none !important;
 }
 
@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 99999;
+  z-index: 999999;
   will-change: transform;
   transition: opacity 0.2s ease;
   filter: drop-shadow(0 0 4px var(--accent-color));
@@ -20,10 +20,19 @@
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-/* Hover: slight scale up */
+.cursor-arrow .arrow-path,
+.cursor-trail .arrow-path {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/* Hover: scale up the arrow */
 .cursor-arrow.hovering svg {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 8px var(--accent-color));
+  transform: scale(1.2);
+}
+
+.cursor-trail.hovering svg {
+  transform: scale(1.2);
 }
 
 /* Click: quick scale down */
@@ -37,7 +46,7 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 99998;
+  z-index: 999998;
   will-change: transform;
   transition: opacity 0.2s ease;
 }
@@ -46,7 +55,7 @@
   display: block;
 }
 
-/* Hover: trail spreads slightly */
+/* Hover: trail stays visible */
 .cursor-trail.hovering svg {
   opacity: 0.35;
 }
@@ -58,7 +67,7 @@
     display: none !important;
   }
 
-  *, *::before, *::after {
+  * {
     cursor: auto !important;
   }
 }

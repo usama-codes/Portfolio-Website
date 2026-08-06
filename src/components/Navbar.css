@@ -53,7 +53,7 @@
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: var(--accent-color);
 }
 
 .resume-btn {

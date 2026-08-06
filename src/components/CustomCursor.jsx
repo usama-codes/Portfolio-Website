@@ -91,16 +91,18 @@ function CustomCursor() {
     <>
       {/* Ghost trail — a faded, delayed copy of the arrow */}
       <div ref={trailRef} className="cursor-trail">
-        <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L1 19.5L5.5 15L10 22.5L13 21L8.5 13.5L14.5 12.5L1 1Z"
-                fill="var(--accent-color)" fillOpacity="0.15" stroke="var(--accent-color)" strokeOpacity="0.2" strokeWidth="1"/>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+          <g className="arrow-path" transform="translate(-5.5, -3.5)">
+            <path d="M7.92098 2.29927C6.93571 1.53286 5.5 2.23498 5.5 3.48325V20.492C5.5 21.9142 7.2945 22.538 8.17661 21.4224L12.3676 16.1222C12.6806 15.7264 13.1574 15.4956 13.6619 15.4956H20.5143C21.9425 15.4956 22.5626 13.6885 21.4353 12.8116L7.92098 2.29927Z" fill="var(--accent-color)" fillOpacity="0.15" />
+          </g>
         </svg>
       </div>
       {/* Main pointer arrow */}
       <div ref={cursorRef} className="cursor-arrow">
-        <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L1 19.5L5.5 15L10 22.5L13 21L8.5 13.5L14.5 12.5L1 1Z"
-                fill="var(--accent-color)" stroke="var(--accent-color)" strokeWidth="1.2" strokeLinejoin="round"/>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg">
+          <g className="arrow-path" transform="translate(-5.5, -3.5)">
+            <path d="M7.92098 2.29927C6.93571 1.53286 5.5 2.23498 5.5 3.48325V20.492C5.5 21.9142 7.2945 22.538 8.17661 21.4224L12.3676 16.1222C12.6806 15.7264 13.1574 15.4956 13.6619 15.4956H20.5143C21.9425 15.4956 22.5626 13.6885 21.4353 12.8116L7.92098 2.29927Z" fill="var(--accent-color)" />
+          </g>
         </svg>
       </div>
     </>

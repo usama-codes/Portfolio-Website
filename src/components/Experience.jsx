@@ -5,6 +5,13 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
+      title: "Flutter Development Internship",
+      company: "Cognitive Health International (CHI)",
+      date: "Apr 2026 - Jun 2026",
+      description: "Developed Aether Link, a cross-platform BLE ecosystem for healthcare devices, and built a Gemini CLI agent plugin enforcing strict MVVM architecture.",
+      skills: ["Flutter", "Java", "Python", "BLE", "Gemini AI"]
+    },
+    {
       title: "ML/DL Intern",
       company: "Murabbi",
       date: "Jun 2024 - Sep 2024",
