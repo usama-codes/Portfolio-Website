@@ -39,11 +39,22 @@ const Projects = () => {
   }, [activeProject]);
 
   const projects = [
-    {
-      title: "Aether Link — BLE Diagnostics & Health Hub",
+        {
+      title: "Raqam AI",
       description:
-        "A cross-platform Bluetooth Low Energy ecosystem surfacing real-time dashboard analytics from healthcare devices like the BPW1 Health Watch, Hipee Pill Box, and Lepod Pro ECG. Built a primary Flutter mobile app, a parallel native Android implementation, and a Java Swing desktop client bridging to a Python BLE subprocess. Also developed a Gemini CLI agent plugin to enforce strict MVVM architecture during AI-assisted code generation.",
-      techStack: ["Flutter", "Java", "Python", "Bluetooth LE", "Gemini AI"],
+        "An Urdu-first personal finance assistant for users in Pakistan, combining a bilingual RTL-friendly dashboard with AI-powered financial education, data analysis, recommendations, and confirmation-gated actions. Includes transaction management, budgets, savings goals, voice conversations, CSV import, receipt OCR, alerts, and an auditable financial action log.",
+      techStack: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Convex",
+        "Clerk",
+        "OpenAI Agents SDK",
+        "Google Gemini",
+        "Tailwind CSS",
+      ],
+      github: "https://github.com/usama-codes/raqam-ai",
+      live: "https://raqam-ai.vercel.app/",
     },
     {
       title: "Second Look",
@@ -79,23 +90,6 @@ const Projects = () => {
       images: [ma1, ma2, ma3, ma4, ma5],
     },
     {
-      title: "Raqam AI",
-      description:
-        "An Urdu-first personal finance assistant for users in Pakistan, combining a bilingual RTL-friendly dashboard with AI-powered financial education, data analysis, recommendations, and confirmation-gated actions. Includes transaction management, budgets, savings goals, voice conversations, CSV import, receipt OCR, alerts, and an auditable financial action log.",
-      techStack: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Convex",
-        "Clerk",
-        "OpenAI Agents SDK",
-        "Google Gemini",
-        "Tailwind CSS",
-      ],
-      github: "https://github.com/usama-codes/raqam-ai",
-      live: "https://raqam-ai.vercel.app/",
-    },
-    {
       title: "Lost & Found Hub",
       description:
         "A full-stack platform for university communities featuring .edu-only registration, item reporting with multi-image uploads, ownership verification, and a gamified contributor leaderboard.",
@@ -104,18 +98,24 @@ const Projects = () => {
       live: "https://lost-and-found-c4nagjev1-usama-codes-projects.vercel.app/",
     },
     {
-      title: "Medify",
-      description:
-        "A full-stack e-pharmacy management platform featuring real-time WebSocket notifications, JWT authentication, and comprehensive dashboard analytics for both customers and pharmacies.",
-      techStack: ["React", "Node.js", "Express", "Supabase", "WebSocket"],
-      github: "https://github.com/usama-codes/medify",
-    },
-    {
       title: "Inquire",
       description:
         "A high-performance full-stack search engine utilizing an offline Python indexing pipeline and a persistent C++ query engine to rank over 190k Medium articles using TF-IDF.",
       techStack: ["C++", "Python", "Flask", "React", "TypeScript", "NLTK"],
       github: "https://github.com/usama-codes/search-engine",
+    },
+    {
+      title: "Aether Link — BLE Diagnostics & Health Hub",
+      description:
+        "A cross-platform Bluetooth Low Energy ecosystem surfacing real-time dashboard analytics from healthcare devices like the BPW1 Health Watch, Hipee Pill Box, and Lepod Pro ECG. Built a primary Flutter mobile app, a parallel native Android implementation, and a Java Swing desktop client bridging to a Python BLE subprocess. Also developed a Gemini CLI agent plugin to enforce strict MVVM architecture during AI-assisted code generation.",
+      techStack: ["Flutter", "Java", "Python", "Bluetooth LE", "Gemini AI"],
+    },
+    {
+      title: "Medify",
+      description:
+        "A full-stack e-pharmacy management platform featuring real-time WebSocket notifications, JWT authentication, and comprehensive dashboard analytics for both customers and pharmacies.",
+      techStack: ["React", "Node.js", "Express", "Supabase", "WebSocket"],
+      github: "https://github.com/usama-codes/medify",
     },
   ];
 
